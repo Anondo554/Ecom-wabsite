@@ -1,0 +1,466 @@
+ /* font famaly */
+ body {
+     font-family: "Poppins", sans-serif;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .nav_header {}
+
+ .container {
+     width: 1320px;
+     margin: 0 auto;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 0;
+     padding: 0;
+     line-height: 0.8;
+ }
+
+ /* END  */
+
+ ul li a {
+     text-decoration: none;
+     line-height: 100px;
+     padding: 0 40px;
+     font-weight: 500;
+     font-size: 16px;
+     color: black;
+ }
+
+ /* navbar */
+
+ .nav_container {
+     display: flex;
+ }
+
+ .logo {
+     width: 15%;
+     padding-top: 30px;
+     font-weight: 700;
+     font-size: 34px;
+ }
+
+ .link {
+     width: 70%;
+     text-align: center;
+
+ }
+
+ .logo_with_manu {
+     display: flex;
+ }
+
+ .link ul li {
+     display: inline-block;
+ }
+
+ .link ul li {
+     list-style: none;
+ }
+
+ .icon {
+     width: 15%;
+     padding-top: 40px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ /* bannar section start  */
+ #banner_part {
+     padding-top: 150px;
+     padding-bottom: 150px;
+     background: url(../images/bannar.jpg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+ }
+
+ .banner_container {
+     width: 643px;
+     background-color: #FFF3E3;
+     padding: 40px;
+     margin-left: auto;
+ }
+
+ .banner_container h5 {
+     padding-bottom: 25px;
+     font-size: 16px;
+     font-weight: 600
+ }
+
+ .banner_container h1 {
+     color: #B88E2F;
+     padding-bottom: 20px;
+     padding-right: 174px;
+     line-height: 65px;
+     font-size: 52px;
+     font-weight: 700
+ }
+
+ .banner_container p {
+     padding-right: 86px;
+     padding-bottom: 50px;
+     font-size: 18px;
+     font-weight: 500
+ }
+
+ .banner_container button {
+     padding: 25px 75px;
+     background-color: #B88E2F;
+     border-radius: 10px;
+     color: white;
+     border: none;
+     font-size: 16px;
+     font-weight: 700;
+ }
+
+ /* home section starting */
+ .home_text {
+     text-align: center;
+     margin: 70px 77px;
+ }
+
+ .home_text h4 {
+     color: #000000;
+     font-size: 32px;
+     font-weight: 700;
+     padding-bottom: 8px;
+ }
+
+ .home_text p {
+     color: #666666;
+     font-size: 20px;
+ }
+
+ .home {
+     display: flex;
+     /* margin: 0 90px;  */
+     padding: 0 70px;
+     gap: 20px;
+ }
+
+ .room h4 {
+     text-align: center;
+     margin-top: 20px;
+     font-size: 24px;
+     font-weight: 600;
+ }
+
+
+ /* card section  */
+ .card_text {
+     text-align: center;
+     font-size: 40px;
+     font-weight: 700;
+     margin-top: 50px;
+ }
+
+ .card_section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin-top: 300px;
+ }
+
+ .card_container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     max-width: 1320px;
+     padding: 20px;
+     box-sizing: border-box;
+ }
+
+ .card {
+     background-color: white;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     position: relative;
+     width: calc(25% - 20px);
+     box-sizing: border-box;
+     text-align: center;
+ }
+
+ .card img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ .discount-badge,
+ .new-badge {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     background-color: #ff6f61;
+     color: white;
+     padding: 5px 10px;
+     border-radius: 50px;
+     font-size: 14px;
+ }
+
+ .new-badge {
+     background-color: #4caf50;
+ }
+
+ .card-content {
+     padding: 15px;
+ }
+
+ .card-content h3 {
+     margin: 10px 0;
+     font-size: 18px;
+     color: #333;
+ }
+
+ .card-content p {
+     color: #777;
+     font-size: 14px;
+     margin: 0 0 15px 0;
+ }
+
+ .price {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     margin-bottom: 15px;
+ }
+
+ .new-price {
+     font-size: 16px;
+     font-weight: bold;
+     color: #333;
+ }
+
+ .old-price {
+     font-size: 14px;
+     color: #bbb;
+     text-decoration: line-through;
+ }
+
+ .add-to-cart {
+     background-color: #ff6f61;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-bottom: 15px;
+     font-size: 14px;
+ }
+
+ .add-to-cart:hover {
+     background-color: #e65c50;
+ }
+
+ .actions {
+     display: flex;
+     justify-content: space-around;
+     font-size: 14px;
+     color: #777;
+ }
+
+ .actions a {
+     color: #777;
+     text-decoration: none;
+ }
+
+ .actions a:hover {
+     color: #333;
+ }
+
+ .card_btn {
+     text-align: center;
+ }
+
+ .card_btn button {
+     padding: 25px 75px;
+     border: 2px solid #B88E2F;
+     color: #B88E2F;
+     font-size: 16px;
+     font-weight: 600;
+     margin-top: 20px;
+ }
+
+
+ /* card pard end  */
+ .rooms {
+     margin-top: 23%;
+ }
+
+ .rooms_continer {
+     display: flex;
+     width: 100%;
+     margin: 0 auto;
+     background-color: #FCF8F3;
+ }
+
+ .room_heding {
+     width: 40%;
+     padding-top: 15%;
+     padding-left: 150px;
+     padding-right: 150px;
+ }
+
+ .room_heding h3 {
+     font-size: 40px;
+     font-weight: 700;
+     color: #3A3A3A;
+ }
+
+ .room_heding p {
+     font-size: 16px;
+     font-weight: 500;
+     color: #616161;
+     margin-top: 15px;
+ }
+
+ .room_heding button {
+     font-size: 16px;
+     font-weight: 600;
+     color: #FFFFFF;
+     background-color: #B88E2F;
+     margin-top: 30px;
+     padding: 20px 30px;
+     border: none;
+ }
+
+ .room_banner_one {
+     width: 35%;
+     padding-right: 20px;
+     margin-top: 30px;
+     margin-bottom: 30px;
+
+ }
+
+ .room_banner_two {
+     width: 35%;
+     padding-right: 25px;
+     margin-top: 30px;
+ }
+
+ /* prodacet strting  */
+ /* styles.css */
+
+ .prodect_container {
+     text-align: center;
+     padding-top: 50px;
+ }
+
+ .prodect_container h5 {
+
+     font-size: 20px;
+     font-weight: 600;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+ .prodect_container h3 {
+     font-size: 40px;
+     font-weight: 700;
+     color: #333;
+     margin-bottom: 20px;
+ }
+
+ .image-gallery {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .image-gallery img {
+     margin: 10px;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s;
+ }
+
+
+ /* footer sreting  */
+ .nev_container {
+     display: flex;
+     justify-content: space-between;
+     margin: 60px 100px;
+ }
+
+ .nav_heder {
+     width: 30%;
+ }
+
+ .nav_heder h4 {
+
+     padding: 30px 0;
+     font-weight: 700;
+     font-size: 24px;
+ }
+
+ .nav_heder p {
+     padding-right: 52px;
+     font-size: 16px;
+     color: #9F9F9F;
+ }
+
+ .Like {
+     color: #9F9F9F;
+     font-size: 16px;
+     font-weight: 500;  
+     margin-top: 13px;
+ }
+
+ .Contact p {
+     font-size: 16px;
+     font-weight: 500;
+     padding-top: 30px;
+ }
+
+.sapport p{ 
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 40px;
+}
+.Help{
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 500; 
+}
+ #email {
+    margin-bottom: 5px;
+     border: white;
+     border-bottom: 2px solid rgb(0, 0, 0);
+ }
+
+ .input a {
+     color: #000000;
+     padding-left: 10px;
+     margin-left: 20px;
+ }
+ .input p{
+    padding-bottom: 40px;
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 40px;
+ }  
+ hr{ 
+    margin: 0 100px;
+ }
+ .copy{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: 50px;
+ }
