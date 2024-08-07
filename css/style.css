@@ -165,123 +165,152 @@
      margin-top: 50px;
  }
 
- .card_section {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 100vh;
-     margin-top: 300px;
+ .card-container{ 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
  }
 
- .card_container {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 20px;
-     max-width: 1320px;
-     padding: 20px;
-     box-sizing: border-box;
- }
+  .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 340px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+  }
 
- .card {
-     background-color: white;
-     border: 1px solid #ccc;
-     border-radius: 10px;
-     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-     overflow: hidden;
-     position: relative;
-     width: calc(25% - 20px);
-     box-sizing: border-box;
-     text-align: center;
- }
+  .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  }
 
- .card img {
-     width: 100%;
-     height: auto;
-     display: block;
- }
+  .product-image {
+      width: 100%;
+      height: auto;
+  }
 
- .discount-badge,
- .new-badge {
-     position: absolute;
-     top: 10px;
-     right: 10px;
-     background-color: #ff6f61;
-     color: white;
-     padding: 5px 10px;
-     border-radius: 50px;
-     font-size: 14px;
- }
+  .discount-badge,
+  .new-badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #ff6f61;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 50px;
+      font-size: 14px;
+  }
 
- .new-badge {
-     background-color: #4caf50;
- }
+  .new-badge {
+      background-color: #4caf50;
+  }
 
- .card-content {
-     padding: 15px;
- }
+  .card-content {
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      text-align: start;
+  }
 
- .card-content h3 {
-     margin: 10px 0;
-     font-size: 18px;
-     color: #333;
- }
+  .card-content h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+      font-weight: 600;
+  }
 
- .card-content p {
-     color: #777;
-     font-size: 14px;
-     margin: 0 0 15px 0;
- }
+  .card-content p {
+      margin: 8px 0;
+      color: black;
+      font-size: 16px;
+      font-weight: 500;
+  }
 
- .price {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 10px;
-     margin-bottom: 15px;
- }
+  .price {
+      font-size: 20px;
+      color: black;
+      font-weight: bold;
+  }
 
- .new-price {
-     font-size: 16px;
-     font-weight: bold;
-     color: #333;
- }
+  .card-content p del {
+      color: #B0B0B0;
+  }
 
- .old-price {
-     font-size: 14px;
-     color: #bbb;
-     text-decoration: line-through;
- }
+  .card_conteiner {
+      display: flex;
+  }
 
- .add-to-cart {
-     background-color: #ff6f61;
-     color: white;
-     border: none;
-     padding: 10px 20px;
-     border-radius: 5px;
-     cursor: pointer;
-     margin-bottom: 15px;
-     font-size: 14px;
- }
+  .btn,
+  .social-icons {
+      display: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+  }
 
- .add-to-cart:hover {
-     background-color: #e65c50;
- }
+  .btn {
+      top: 30%;
+      width: 200px;
+      height: 48px;
+      padding: 0 20px;
+      font-size: 16px;
+      color: #E89F71;
+      font-weight: 600;
+      background-color: #ffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  }
 
- .actions {
-     display: flex;
-     justify-content: space-around;
-     font-size: 14px;
-     color: #777;
- }
+  .btn:hover {
+      background-color: #0056b3;
+  }
 
- .actions a {
-     color: #777;
-     text-decoration: none;
- }
+  .social-icons {
+      top: 45%;
+      display: flex; 
+      justify-content: center;
+  }
 
- .actions a:hover {
-     color: #333;
- }
+  .social-icon {
+      margin: 0 10px;
+      color: #ffff;
+      font-size: 14px;
+      transition: color 0.3s;
+      filter: opacity(0);
+      transition: filter 0.3s;
+  }
+
+  .social-icon:hover {
+      color: #0056b3;
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0);
+      transition: background-color 0.2s;
+  }
+
+  .card:hover .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .card:hover .btn {
+      display: block;
+  }
+
+  .card:hover .social-icons .social-icon {
+      filter: opacity(1);
+      transition: filter 0.3s;
+  }
 
  .card_btn {
      text-align: center;
@@ -299,7 +328,7 @@
 
  /* card pard end  */
  .rooms {
-     margin-top: 23%;
+     margin-top: 50px;
  }
 
  .rooms_continer {
@@ -417,7 +446,7 @@
  .Like {
      color: #9F9F9F;
      font-size: 16px;
-     font-weight: 500;  
+     font-weight: 500;
      margin-top: 13px;
  }
 
@@ -427,18 +456,20 @@
      padding-top: 30px;
  }
 
-.sapport p{ 
-    font-size: 16px;
-    font-weight: 500;
-    padding-top: 40px;
-}
-.Help{
-    color: #9F9F9F;
-    font-size: 16px;
-    font-weight: 500; 
-}
+ .sapport p {
+     font-size: 16px;
+     font-weight: 500;
+     padding-top: 40px;
+ }
+
+ .Help {
+     color: #9F9F9F;
+     font-size: 16px;
+     font-weight: 500;
+ }
+
  #email {
-    margin-bottom: 5px;
+     margin-bottom: 5px;
      border: white;
      border-bottom: 2px solid rgb(0, 0, 0);
  }
@@ -448,19 +479,23 @@
      padding-left: 10px;
      margin-left: 20px;
  }
- .input p{
-    padding-bottom: 40px;
-    color: #9F9F9F;
-    font-size: 16px;
-    font-weight: 500;
-    padding-top: 40px;
- }  
- hr{ 
-    margin: 0 100px;
+
+ .input p {
+     padding-bottom: 40px;
+     color: #9F9F9F;
+     font-size: 16px;
+     font-weight: 500;
+     padding-top: 40px;
  }
- .copy{
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 100px;
-    margin-top: 50px;
+
+ hr {
+     margin: 0 100px;
+ }
+
+ .copy {
+     font-size: 16px;
+     font-weight: 400;
+     margin-left: 100px;
+     margin-top: 50px;
+     margin-bottom: 30px;
  }
